@@ -1,4 +1,5 @@
 import './App.css';
+import Q12DiscoverLetter from './components/Q12DiscoverLetter';
 import Q1String from './components/Q1String';
 import Q2Uppercase from './components/Q2Uppercase';
 import Q3Lowercase from './components/Q3Lowercase';
@@ -126,7 +127,12 @@ const App: React.FC = () => {
                 <br /> Prop 2: 3
                 <br /> Retorno: c
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q12DiscoverLetter
+                    value="Inconstitucionalissimamente"
+                    position={10}
+                />
+            </div>
 
             <h2 className="fs-6">
                 13. Crie um componente que recebe 3 strings. Retorna a primeira
