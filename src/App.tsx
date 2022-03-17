@@ -1,7 +1,7 @@
 import './App.css';
 import Q10LargerString from './components/Q10LargerString';
 import Q1String from './components/Q1String';
-import Q20Exponencial from './components/Q20Exponencial';
+import Q20ExponencialTwo from './components/Q20ExponencialTwo';
 import Q2Uppercase from './components/Q2Uppercase';
 import Q3Lowercase from './components/Q3Lowercase';
 import Q4StringLength from './components/Q4StringLength';
@@ -199,7 +199,7 @@ const App: React.FC = () => {
                 elevado a 2
             </h2>
             <div className="card p-3 mb-4">
-                <Q20Exponencial value={4} />
+                <Q20ExponencialTwo value={4} />
             </div>
 
             <h2 className="fs-6">
