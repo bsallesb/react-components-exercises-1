@@ -4,9 +4,7 @@ interface IQ7PhraseProps {
 }
 
 const Q7Phrase: React.FC<IQ7PhraseProps> = ({ firstValue, secondValue }) => (
-    <span>
-        {firstValue} {secondValue}
-    </span>
+    <span>{`${firstValue} ${secondValue}`}</span>
 );
 
 export default Q7Phrase;
