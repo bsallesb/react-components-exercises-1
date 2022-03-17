@@ -1,6 +1,7 @@
 import './App.css';
 import Q1String from './components/Q1String';
 import Q2Uppercase from './components/Q2Uppercase';
+import Q3Lowercase from './components/Q3Lowercase';
 
 const App: React.FC = () => {
     return (
@@ -27,7 +28,9 @@ const App: React.FC = () => {
                 3. Crie um componente que recebe uma prop &quot;value&quot;, do
                 tipo string, e retorna em letras minúsculas.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q3Lowercase value="TESTE" />
+            </div>
 
             <h2 className="fs-6">
                 4. Crie um componente que recebe uma prop &quot;value&quot;, do
