@@ -143,7 +143,7 @@ const App: React.FC = () => {
             <div className="card p-3 mb-4">
                 <Q13ReplaceCharacter
                     text="Incostitucionalissimamente"
-                    character="n"
+                    search="n"
                     replaceTo="N"
                 />
             </div>
