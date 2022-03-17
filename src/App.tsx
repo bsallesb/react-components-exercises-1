@@ -1,4 +1,5 @@
 import './App.css';
+import Q11FindCharacterInAString from './components/Q11FindCharacterInAString';
 import Q1String from './components/Q1String';
 import Q2Uppercase from './components/Q2Uppercase';
 import Q3Lowercase from './components/Q3Lowercase';
@@ -113,7 +114,12 @@ const App: React.FC = () => {
                 <br /> Prop 2: mente
                 <br /> Retorno: Sim
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q11FindCharacterInAString
+                    value="Primeiro teste"
+                    character="teste"
+                />
+            </div>
 
             <h2 className="fs-6">
                 12. Crie um componente que recebe uma string e um número.
