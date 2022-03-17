@@ -3,7 +3,7 @@ interface IQ6LastCharProps {
 }
 
 const Q6LastChar: React.FC<IQ6LastCharProps> = ({ value }) => (
-    <span>{value.charAt(0)}</span>
+    <span>{value.charAt(value.length - 1)}</span>
 );
 
 export default Q6LastChar;
