@@ -1,5 +1,5 @@
 import './App.css';
-import Q14CapitilizeTheFirstLetter from './components/Q14CapitilizeTheFirstLetter';
+import Q14CapitalizeTheFirstLetter from './components/Q14CapitalizeTheFirstLetter';
 import Q1String from './components/Q1String';
 import Q2Uppercase from './components/Q2Uppercase';
 import Q3Lowercase from './components/Q3Lowercase';
@@ -151,7 +151,7 @@ const App: React.FC = () => {
                 <br /> Retorno: Mas que loucura.
             </h2>
             <div className="card p-3 mb-4">
-                <Q14CapitilizeTheFirstLetter value="mAS QUE LOucura" />
+                <Q14CapitalizeTheFirstLetter value="mAS QUE LOucura" />
             </div>
 
             <h2 className="fs-6">
