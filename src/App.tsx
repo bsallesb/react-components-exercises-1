@@ -1,5 +1,5 @@
 import './App.css';
-import Q11FindCharacterInAString from './components/Q11FindCharacterInAString';
+import Q11SearchInTheText from './components/Q11SearchInTheText';
 import Q1String from './components/Q1String';
 import Q2Uppercase from './components/Q2Uppercase';
 import Q3Lowercase from './components/Q3Lowercase';
@@ -115,10 +115,7 @@ const App: React.FC = () => {
                 <br /> Retorno: Sim
             </h2>
             <div className="card p-3 mb-4">
-                <Q11FindCharacterInAString
-                    value="Primeiro teste"
-                    search="teste"
-                />
+                <Q11SearchInTheText value="Primeiro teste" search="teste" />
             </div>
 
             <h2 className="fs-6">
