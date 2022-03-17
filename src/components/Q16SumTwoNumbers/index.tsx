@@ -6,5 +6,5 @@ interface IQ16SumTwoNumbersProps {
 const Q16SumTwoNumbers: React.FC<IQ16SumTwoNumbersProps> = ({
     firstValue,
     secondValue,
-}) => <span>{`${firstValue} + ${secondValue}`}</span>;
+}) => <span>{firstValue + secondValue}</span>;
 export default Q16SumTwoNumbers;
