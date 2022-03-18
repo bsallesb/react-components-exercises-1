@@ -1,11 +1,15 @@
 import './App.css';
+import Q10LargerString from './components/Q10LargerString';
 import Q14CapitalizeTheFirstLetter from './components/Q14CapitalizeTheFirstLetter';
+import Q18Multiplication from './components/Q18Multiplication';
 import Q1String from './components/Q1String';
+import Q20ExponencialTwo from './components/Q20ExponencialTwo';
 import Q2Uppercase from './components/Q2Uppercase';
 import Q3Lowercase from './components/Q3Lowercase';
 import Q4StringLength from './components/Q4StringLength';
 import Q5FirstChar from './components/Q5FirstChar';
 import Q6LastChar from './components/Q6LastChar';
+import Q8RepeatText from './components/Q8RepeatText';
 
 const App: React.FC = () => {
     return (
@@ -84,7 +88,9 @@ const App: React.FC = () => {
                 <br /> Prop 2: 5.
                 <br /> Retorno: OiOiOiOiOi
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q8RepeatText text="Enriquecer" factor={10} />
+            </div>
 
             <h2 className="fs-6">
                 9. Crie um componente que recebe duas props, uma string e um
@@ -102,7 +108,12 @@ const App: React.FC = () => {
                 10. Crie um componente que recebe duas strings e retorna a que
                 tiver mais caracteres.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q10LargerString
+                    firstText="Primeiro texto"
+                    secondText="Segundo texto"
+                />
+            </div>
 
             <h2 className="fs-6">
                 11. Crie um componente que recebe duas strings e retorna
@@ -181,7 +192,9 @@ const App: React.FC = () => {
                 18. Crie um componente que recebe dois números e retorna o valor
                 da multiplicação entre eles.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q18Multiplication firstValue={10} secondValue={8} />
+            </div>
 
             <h2 className="fs-6">
                 19. Crie um componente que recebe dois números e retorna o valor
@@ -194,7 +207,9 @@ const App: React.FC = () => {
                 20. Crie um componente que recebe um número e retorna o mesmo
                 elevado a 2
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q20ExponencialTwo value={4} />
+            </div>
 
             <h2 className="fs-6">
                 21. Crie um componente que recebe dois números e retorna o
