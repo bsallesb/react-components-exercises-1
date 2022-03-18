@@ -1,5 +1,5 @@
 import './App.css';
-import Q13ReplaceCharacter from './components/Q13ReplaceCharacter';
+import Q13ReplaceTexts from './components/Q13ReplaceTexts';
 import Q1String from './components/Q1String';
 import Q2Uppercase from './components/Q2Uppercase';
 import Q3Lowercase from './components/Q3Lowercase';
@@ -141,7 +141,7 @@ const App: React.FC = () => {
                 <br /> Retorno: BXnXnX
             </h2>
             <div className="card p-3 mb-4">
-                <Q13ReplaceCharacter
+                <Q13ReplaceTexts
                     text="Incostitucionalissimamente"
                     search="n"
                     replaceTo="N"
