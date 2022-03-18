@@ -1,5 +1,6 @@
 import './App.css';
 import Q10LargerString from './components/Q10LargerString';
+import Q11SearchInTheText from './components/Q11SearchInTheText';
 import Q17Subtraction from './components/Q17Subtraction';
 import Q18Multiplication from './components/Q18Multiplication';
 import Q1String from './components/Q1String';
@@ -9,6 +10,7 @@ import Q3Lowercase from './components/Q3Lowercase';
 import Q4StringLength from './components/Q4StringLength';
 import Q5FirstChar from './components/Q5FirstChar';
 import Q6LastChar from './components/Q6LastChar';
+import Q7Phrase from './components/Q7Phrase';
 import Q8RepeatText from './components/Q8RepeatText';
 
 const App: React.FC = () => {
@@ -77,7 +79,9 @@ const App: React.FC = () => {
                 <br />
                 Retorno: Oi tudo bem?
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q7Phrase firstValue="Oi" secondValue="tudo bem?" />
+            </div>
 
             <h2 className="fs-6">
                 8. Crie um componente que recebe duas props, uma string e um
@@ -125,7 +129,9 @@ const App: React.FC = () => {
                 <br /> Prop 2: mente
                 <br /> Retorno: Sim
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q11SearchInTheText value="Primeiro teste" search="teste" />
+            </div>
 
             <h2 className="fs-6">
                 12. Crie um componente que recebe uma string e um número.
