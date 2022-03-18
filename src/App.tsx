@@ -3,6 +3,7 @@ import Q10LargerString from './components/Q10LargerString';
 import Q18Multiplication from './components/Q18Multiplication';
 import Q1String from './components/Q1String';
 import Q20ExponencialTwo from './components/Q20ExponencialTwo';
+import Q25CheckPrime from './components/Q25CheckPrime';
 import Q2Uppercase from './components/Q2Uppercase';
 import Q3Lowercase from './components/Q3Lowercase';
 import Q4StringLength from './components/Q4StringLength';
@@ -238,7 +239,9 @@ const App: React.FC = () => {
                 &quot;Sim&quot; se ele for primo. Caso contrário, retorna
                 &quot;Não&quot;
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q25CheckPrime value={6} />
+            </div>
 
             <h2 className="fs-6">
                 26. Crie um componente que recebe um número X e retorna os
