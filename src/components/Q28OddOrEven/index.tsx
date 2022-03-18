@@ -7,7 +7,7 @@ const Q28OddOrEven: React.FC<IQ28OddOrEvenProps> = ({ value }) => {
     if (value % 2 === 0) {
         isEvenOrOdd = <span>Par</span>;
     } else {
-        isEvenOrOdd = <span>Impar</span>;
+        isEvenOrOdd = <span>Ímpar</span>;
     }
     return isEvenOrOdd;
 };
