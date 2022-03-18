@@ -1,5 +1,6 @@
 import './App.css';
 import Q10LargerString from './components/Q10LargerString';
+import Q11SearchInTheText from './components/Q11SearchInTheText';
 import Q18Multiplication from './components/Q18Multiplication';
 import Q1String from './components/Q1String';
 import Q20ExponencialTwo from './components/Q20ExponencialTwo';
@@ -127,7 +128,9 @@ const App: React.FC = () => {
                 <br /> Prop 2: mente
                 <br /> Retorno: Sim
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q11SearchInTheText value="Primeiro teste" search="teste" />
+            </div>
 
             <h2 className="fs-6">
                 12. Crie um componente que recebe uma string e um número.
