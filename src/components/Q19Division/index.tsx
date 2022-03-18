@@ -1,15 +1,12 @@
 interface IQ19DivisionProps {
-    firstValue: number;
-    secondValue: number;
+    quotient: number;
+    dividend: number;
 }
 
-const Q19Division: React.FC<IQ19DivisionProps> = ({
-    firstValue,
-    secondValue,
-}) => {
-    const division = firstValue / secondValue;
+const Q19Division: React.FC<IQ19DivisionProps> = ({ quotient, dividend }) => {
+    const division = quotient / dividend;
     let result;
-    if (division === 0) {
+    if (dividend === 0) {
         result = <span>Inválido</span>;
     } else {
         result = division;
