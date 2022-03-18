@@ -224,7 +224,7 @@ const App: React.FC = () => {
                 igual a Y, retorna &quot;Inválido&quot;
             </h2>
             <div className="card p-3 mb-4">
-                <Q24RandomNumberCreateInterval minValue={20} maxValue={300} />
+                <Q24RandomNumberCreateInterval minValue={20} maxValue={30} />
             </div>
 
             <h2 className="fs-6">

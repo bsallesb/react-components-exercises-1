@@ -5,7 +5,17 @@ interface IQ24RandomNumberCreateIntervalProps {
 
 const Q24RandomNumberCreateInterval: React.FC<
     IQ24RandomNumberCreateIntervalProps
-> = ({ minValue, maxValue }) => (
-    <span>{Math.floor(Math.random() * (maxValue - minValue) + minValue)}</span>
-);
+> = ({ minValue, maxValue }) => {
+    const RandomNumber = Math.floor(
+        Math.random() * (maxValue - minValue) + minValue
+    );
+    let Number;
+    if (minValue > maxValue) {
+        Number = 'Inválido';
+    } else {
+        Number = RandomNumber;
+    }
+
+    return <span>{Number}</span>;
+};
 export default Q24RandomNumberCreateInterval;
