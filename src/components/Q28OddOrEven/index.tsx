@@ -3,12 +3,9 @@ interface IQ28OddOrEvenProps {
 }
 
 const Q28OddOrEven: React.FC<IQ28OddOrEvenProps> = ({ value }) => {
-    let isEvenOrOdd;
     if (value % 2 === 0) {
-        isEvenOrOdd = <span>Par</span>;
-    } else {
-        isEvenOrOdd = <span>Ímpar</span>;
+        return <span>Par</span>;
     }
-    return isEvenOrOdd;
+    return <span>Ímpar</span>;
 };
 export default Q28OddOrEven;

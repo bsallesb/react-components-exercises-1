@@ -259,6 +259,9 @@ const App: React.FC = () => {
             </h2>
             <div className="card p-3 mb-4">
                 <Q28OddOrEven value={6} />
+                <Q28OddOrEven value={7} />
+                <Q28OddOrEven value={10} />
+                <Q28OddOrEven value={3} />
             </div>
 
             <h2 className="fs-6">
