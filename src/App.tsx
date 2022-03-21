@@ -252,7 +252,7 @@ const App: React.FC = () => {
                 fatorial
             </h2>
             <div className="card p-3 mb-4">
-                <Q27GetFactorial value={10} />
+                <Q27GetFactorial value={5} />
             </div>
 
             <h2 className="fs-6">
