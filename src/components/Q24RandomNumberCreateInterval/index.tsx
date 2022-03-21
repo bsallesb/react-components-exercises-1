@@ -9,13 +9,9 @@ const Q24RandomNumberCreateInterval: React.FC<
     const RandomNumber = Math.floor(
         Math.random() * (maxValue - minValue + 1) + minValue
     );
-    let Number;
     if (minValue > maxValue) {
-        Number = 'Inválido';
-    } else {
-        Number = RandomNumber;
+        return <span>Inválido</span>;
     }
-
-    return <span>{Number}</span>;
+    return <span>{RandomNumber}</span>;
 };
 export default Q24RandomNumberCreateInterval;
