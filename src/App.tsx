@@ -2,6 +2,7 @@ import './App.css';
 import Q10LargerString from './components/Q10LargerString';
 import Q11SearchInTheText from './components/Q11SearchInTheText';
 import Q13ReplaceTexts from './components/Q13ReplaceTexts';
+import Q14CapitalizeTheFirstLetter from './components/Q14CapitalizeTheFirstLetter';
 import Q18Multiplication from './components/Q18Multiplication';
 import Q1String from './components/Q1String';
 import Q20ExponencialTwo from './components/Q20ExponencialTwo';
@@ -175,7 +176,9 @@ const App: React.FC = () => {
                 <br /> Prop 1: MaS QuE LoUcUrA.
                 <br /> Retorno: Mas que loucura.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q14CapitalizeTheFirstLetter value="mAS QUE LOucura" />
+            </div>
 
             <h2 className="fs-6">
                 15. Crie um componente que recebe uma string e retorna a
