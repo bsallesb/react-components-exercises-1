@@ -14,9 +14,9 @@ const Q32Rectangles: React.FC<IQ32RectanglesProps> = ({
     const rectangle = (
         <div
             style={{
-                width: `${width}`,
-                height: `${height}`,
-                backgroundColor: `${color}`,
+                width,
+                height,
+                backgroundColor: color,
             }}
             className="d-inline-flex me-3"
         />
