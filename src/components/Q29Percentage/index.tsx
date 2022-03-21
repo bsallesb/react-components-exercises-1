@@ -8,8 +8,7 @@ const Q29Percentage: React.FC<IQ29PercentageProps> = ({
     smallestValue,
 }) => {
     const result = Number(smallestValue * 100) / biggestValue;
-    const roundedValue = result.toFixed(2);
-    const rounded = Number(roundedValue);
-    return <span>{`${rounded}%`}</span>;
+    const roundedValue = Number(result.toFixed(2));
+    return <span>{`${roundedValue}%`}</span>;
 };
 export default Q29Percentage;

@@ -265,6 +265,9 @@ const App: React.FC = () => {
             </h2>
             <div className="card p-3 mb-4">
                 <Q29Percentage smallestValue={40} biggestValue={66} />
+                <Q29Percentage smallestValue={40} biggestValue={100} />
+                <Q29Percentage smallestValue={400} biggestValue={40} />
+                <Q29Percentage smallestValue={-40} biggestValue={66} />
             </div>
 
             <h2 className="fs-6">
