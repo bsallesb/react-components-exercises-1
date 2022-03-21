@@ -9,7 +9,7 @@ const Q34UrlList: React.FC<IQ34UrlListProps> = ({ list }) => (
         {list.map(item => (
             <div>
                 <a href={item.url} target="_blank" rel="noreferrer">
-                    <span>{item.label}</span>
+                    {item.label}
                 </a>
             </div>
         ))}
