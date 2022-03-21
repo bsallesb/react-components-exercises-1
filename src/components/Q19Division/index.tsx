@@ -5,13 +5,9 @@ interface IQ19DivisionProps {
 
 const Q19Division: React.FC<IQ19DivisionProps> = ({ quotient, dividend }) => {
     const division = quotient / dividend;
-    let result;
     if (dividend === 0) {
-        result = <span>Inválido</span>;
-    } else {
-        result = division;
+        return <span>Inválido</span>;
     }
-
-    return <span>{result}</span>;
+    return <span>{division}</span>;
 };
 export default Q19Division;
