@@ -287,9 +287,14 @@ const App: React.FC = () => {
             </h2>
             <div className="card p-3 mb-4">
                 <Q32Rectangles x={5} width="40px" height="40px" color="blue" />
-                <Q32Rectangles x={7} width="90px" height="25px" color="green" />
+                <Q32Rectangles x={6} width="90px" height="25px" color="green" />
                 <Q32Rectangles x={2} width="40" height="30px" color="oi" />
-                <Q32Rectangles x={9} width="40px" height="20" color="purple" />
+                <Q32Rectangles
+                    x={9}
+                    width="40px"
+                    height="20px"
+                    color="purple"
+                />
             </div>
 
             <h2 className="fs-6">

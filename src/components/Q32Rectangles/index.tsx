@@ -22,7 +22,7 @@ const Q32Rectangles: React.FC<IQ32RectanglesProps> = ({
         />
     );
     const rectangles = [];
-    for (let i = 1; i < x + 1; i += 1) {
+    for (let i = 1; i <= x; i += 1) {
         rectangles.push(rectangle);
     }
     return <div>{rectangles}</div>;
