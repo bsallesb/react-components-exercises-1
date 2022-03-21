@@ -8,10 +8,10 @@ const Q33Circles: React.FC<IQ33CirclesProps> = ({ x, size, color }) => {
     const circle = (
         <div
             style={{
-                width: `${size}`,
-                height: `${size}`,
-                borderRadius: `${size}`,
-                backgroundColor: `${color}`,
+                width: size,
+                height: size,
+                borderRadius: size,
+                backgroundColor: color,
             }}
             className="d-inline-flex me-3"
         />
