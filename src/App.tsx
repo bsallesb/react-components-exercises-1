@@ -240,7 +240,13 @@ const App: React.FC = () => {
                 &quot;Não&quot;
             </h2>
             <div className="card p-3 mb-4">
+                <Q25CheckPrime value={-13} />
+                <Q25CheckPrime value={-6} />
+                <Q25CheckPrime value={-5} />
+                <Q25CheckPrime value={0} />
+                <Q25CheckPrime value={5} />
                 <Q25CheckPrime value={6} />
+                <Q25CheckPrime value={13} />
             </div>
 
             <h2 className="fs-6">
