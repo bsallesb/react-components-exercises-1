@@ -9,6 +9,7 @@ import Q20ExponencialTwo from './components/Q20ExponencialTwo';
 import Q21Exponencial from './components/Q21Exponencial';
 import Q22LargestNumber from './components/Q22LargestNumber';
 import Q2Uppercase from './components/Q2Uppercase';
+import Q34UrlList from './components/Q34UrlList';
 import Q3Lowercase from './components/Q3Lowercase';
 import Q4StringLength from './components/Q4StringLength';
 import Q5FirstChar from './components/Q5FirstChar';
@@ -320,7 +321,20 @@ const App: React.FC = () => {
                 url) e retorna uma lista de links externos que apontem para{' '}
                 <b>url</b> e que sejam descritos por <b>label</b>
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q34UrlList
+                    list={[
+                        {
+                            label: 'Facebook',
+                            url: 'http://www.facebook.com',
+                        },
+                        {
+                            label: 'Twitter',
+                            url: 'http://twitter.com',
+                        },
+                    ]}
+                />
+            </div>
 
             <h2 className="fs-6">
                 35. Crie um componente que recebe um array de urls de imagens,
