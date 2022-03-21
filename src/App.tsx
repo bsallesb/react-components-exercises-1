@@ -9,6 +9,7 @@ import Q20ExponencialTwo from './components/Q20ExponencialTwo';
 import Q21Exponencial from './components/Q21Exponencial';
 import Q22LargestNumber from './components/Q22LargestNumber';
 import Q2Uppercase from './components/Q2Uppercase';
+import Q32Rectangles from './components/Q32Rectangles';
 import Q3Lowercase from './components/Q3Lowercase';
 import Q4StringLength from './components/Q4StringLength';
 import Q5FirstChar from './components/Q5FirstChar';
@@ -306,7 +307,12 @@ const App: React.FC = () => {
                 <b>width</b> e <b>height</b> respectivamente, e com cor de fundo
                 definido por <b>color</b>, alinhados lado a lado
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q32Rectangles x={5} width="40px" height="40px" color="blue" />
+                <Q32Rectangles x={7} width="90px" height="25px" color="green" />
+                <Q32Rectangles x={2} width="40" height="30px" color="oi" />
+                <Q32Rectangles x={9} width="40px" height="20" color="purple" />
+            </div>
 
             <h2 className="fs-6">
                 33. Crie um componente que recebe (x, size, color) e retorna X
