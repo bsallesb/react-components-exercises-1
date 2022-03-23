@@ -11,6 +11,7 @@ import Q22LargestNumber from './components/Q22LargestNumber';
 import Q23RandomNumber from './components/Q23RandomNumber';
 import Q2Uppercase from './components/Q2Uppercase';
 import Q34UrlList from './components/Q34UrlList';
+import Q37SetTextByButton from './components/Q37SetTextByButton';
 import Q3Lowercase from './components/Q3Lowercase';
 import Q4StringLength from './components/Q4StringLength';
 import Q5FirstChar from './components/Q5FirstChar';
@@ -358,7 +359,9 @@ const App: React.FC = () => {
                 div vazia. Ao clicar no botão, a div deve receber o texto que
                 estiver escrito no input
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q37SetTextByButton />
+            </div>
 
             <h2 className="fs-6">
                 38. Crie um componente que tem 2 inputs de número, um terceiro
