@@ -3,13 +3,16 @@ import Q10LargerString from './components/Q10LargerString';
 import Q11SearchInTheText from './components/Q11SearchInTheText';
 import Q13ReplaceTexts from './components/Q13ReplaceTexts';
 import Q14CapitalizeTheFirstLetter from './components/Q14CapitalizeTheFirstLetter';
+import Q16SumTwoNumbers from './components/Q16SumTwoNumbers';
 import Q17Subtraction from './components/Q17Subtraction';
 import Q18Multiplication from './components/Q18Multiplication';
 import Q1String from './components/Q1String';
 import Q20ExponencialTwo from './components/Q20ExponencialTwo';
 import Q21Exponencial from './components/Q21Exponencial';
 import Q22LargestNumber from './components/Q22LargestNumber';
+import Q23RandomNumber from './components/Q23RandomNumber';
 import Q2Uppercase from './components/Q2Uppercase';
+import Q34UrlList from './components/Q34UrlList';
 import Q3Lowercase from './components/Q3Lowercase';
 import Q4StringLength from './components/Q4StringLength';
 import Q5FirstChar from './components/Q5FirstChar';
@@ -196,7 +199,9 @@ const App: React.FC = () => {
                 16. Crie um componente que recebe dois números e retorna o valor
                 da soma entre eles.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q16SumTwoNumbers firstValue={3} secondValue={5} />
+            </div>
 
             <h2 className="fs-6">
                 17. Crie um componente que recebe dois números e retorna o valor
@@ -249,7 +254,9 @@ const App: React.FC = () => {
                 23. Crie um componente que retorna um número inteiro aleatório
                 entre 0 e 10
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q23RandomNumber />
+            </div>
 
             <h2 className="fs-6">
                 24. Crie um componente que recebe dois números, X e Y, e retorna
@@ -323,7 +330,20 @@ const App: React.FC = () => {
                 url) e retorna uma lista de links externos que apontem para{' '}
                 <b>url</b> e que sejam descritos por <b>label</b>
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q34UrlList
+                    list={[
+                        {
+                            label: 'Facebook',
+                            url: 'http://www.facebook.com',
+                        },
+                        {
+                            label: 'Twitter',
+                            url: 'http://twitter.com',
+                        },
+                    ]}
+                />
+            </div>
 
             <h2 className="fs-6">
                 35. Crie um componente que recebe um array de urls de imagens,
