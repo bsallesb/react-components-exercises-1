@@ -4,6 +4,7 @@ import Q11SearchInTheText from './components/Q11SearchInTheText';
 import Q13ReplaceTexts from './components/Q13ReplaceTexts';
 import Q14CapitalizeTheFirstLetter from './components/Q14CapitalizeTheFirstLetter';
 import Q16SumTwoNumbers from './components/Q16SumTwoNumbers';
+import Q17Subtraction from './components/Q17Subtraction';
 import Q18Multiplication from './components/Q18Multiplication';
 import Q1String from './components/Q1String';
 import Q20ExponencialTwo from './components/Q20ExponencialTwo';
@@ -206,7 +207,9 @@ const App: React.FC = () => {
                 17. Crie um componente que recebe dois números e retorna o valor
                 da subtração entre eles.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q17Subtraction firstValue={18} secondValue={10} />
+            </div>
 
             <h2 className="fs-6">
                 18. Crie um componente que recebe dois números e retorna o valor
