@@ -130,7 +130,7 @@ const App: React.FC = () => {
             <div className="card p-3 mb-4">
                 <Q12DiscoverLetter
                     value="Inconstitucionalissimamente"
-                    position={10}
+                    position={-1}
                 />
             </div>
 
