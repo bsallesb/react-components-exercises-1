@@ -14,6 +14,8 @@ import Q23RandomNumber from './components/Q23RandomNumber';
 import Q2Uppercase from './components/Q2Uppercase';
 import Q34UrlList from './components/Q34UrlList';
 import Q3Lowercase from './components/Q3Lowercase';
+import Q42AddLines from './components/Q42AddLines';
+import Q43OneMore from './components/Q43OneMore';
 import Q4StringLength from './components/Q4StringLength';
 import Q5FirstChar from './components/Q5FirstChar';
 import Q6LastChar from './components/Q6LastChar';
@@ -122,7 +124,7 @@ const App: React.FC = () => {
             <div className="card p-3 mb-4">
                 <Q10LargerString
                     firstText="Primeiro texto"
-                    secondText="Segundo texto"
+                    secondText="Segundo texto goid"
                 />
             </div>
 
@@ -405,14 +407,18 @@ const App: React.FC = () => {
                 texto do input deve ser adicionado uma linha abaixo do texto
                 adicionado anteriormente
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q42AddLines />
+            </div>
 
             <h2 className="fs-6">
                 43. Crie um componente que tem um <b>span</b> com o número zero
                 e um botão. A cada vez que o botão for apertado, o número
                 contido no <b>span</b> deve receber +1
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q43OneMore />
+            </div>
 
             <h2 className="fs-6">
                 44. Crie um componente que tem um <b>span</b> vazio, um input de
