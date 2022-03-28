@@ -14,6 +14,7 @@ import Q23RandomNumber from './components/Q23RandomNumber';
 import Q2Uppercase from './components/Q2Uppercase';
 import Q34UrlList from './components/Q34UrlList';
 import Q3Lowercase from './components/Q3Lowercase';
+import Q46AddressByZipCode from './components/Q46AddressByZipCode';
 import Q4StringLength from './components/Q4StringLength';
 import Q5FirstChar from './components/Q5FirstChar';
 import Q6LastChar from './components/Q6LastChar';
@@ -443,7 +444,9 @@ const App: React.FC = () => {
                 Obs: Deve ser exibido um ícone de loading enquanto a API estiver
                 buscando o CEP
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q46AddressByZipCode />
+            </div>
 
             <h2 className="fs-6">
                 47. Crie um componente que tem um input de número (dólares), um
