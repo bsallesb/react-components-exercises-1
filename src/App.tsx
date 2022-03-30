@@ -16,6 +16,7 @@ import Q34UrlList from './components/Q34UrlList';
 import Q3Lowercase from './components/Q3Lowercase';
 import Q46AddressByZipCode from './components/Q46AddressByZipCode';
 import Q47USDtoBRL from './components/Q47USDtoBRL';
+import Q48Advice from './components/Q48Advice';
 import Q4StringLength from './components/Q4StringLength';
 import Q5FirstChar from './components/Q5FirstChar';
 import Q6LastChar from './components/Q6LastChar';
@@ -468,7 +469,9 @@ const App: React.FC = () => {
                 Conselhos (https://api.adviceslip.com/advice) e retornar dentro
                 do <b>span</b> um conselho. Exibir um loading enquanto procura
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q48Advice />
+            </div>
 
             <h2 className="fs-6">
                 49. Crie um componente que tem um campo do tipo select com 5
