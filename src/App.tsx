@@ -256,6 +256,8 @@ const App: React.FC = () => {
             </h2>
             <div className="card p-3 mb-4">
                 <Q24RandomNumberCreateInterval minValue={20} maxValue={30} />
+                <Q24RandomNumberCreateInterval minValue={20} maxValue={20} />
+                <Q24RandomNumberCreateInterval minValue={40} maxValue={30} />
             </div>
 
             <h2 className="fs-6">
