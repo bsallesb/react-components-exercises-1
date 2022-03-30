@@ -193,8 +193,8 @@ const App: React.FC = () => {
                 &quot;Inválido&quot;
             </h2>
             <div className="card p-3 mb-4">
-                <Q19Division quotient={2} dividend={20} />
-                <Q19Division quotient={0} dividend={20} />
+                <Q19Division divider={2} dividend={20} />
+                <Q19Division divider={0} dividend={20} />
             </div>
 
             <h2 className="fs-6">
