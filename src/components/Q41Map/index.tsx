@@ -69,7 +69,7 @@ const Q41Map: React.FC = () => {
                 <div style={{ height: '40vh', width: '100%' }}>
                     <GoogleMapReact
                         bootstrapURLKeys={{
-                            key: 'AIzaSyDlLktdmmvSw3CLwdXVdTSV5cenoBMzu50',
+                            key: `${process.env.REACT_APP_GOOGLE_KEY}`,
                         }}
                         defaultCenter={defaultProps.center}
                         defaultZoom={defaultProps.zoom}
