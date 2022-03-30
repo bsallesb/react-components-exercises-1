@@ -132,6 +132,18 @@ const App: React.FC = () => {
                     value="Inconstitucionalissimamente"
                     position={-1}
                 />
+                <Q12DiscoverLetter
+                    value="Inconstitucionalissimamente"
+                    position={2}
+                />
+                <Q12DiscoverLetter
+                    value="Inconstitucionalissimamente"
+                    position={27}
+                />
+                <Q12DiscoverLetter
+                    value="Inconstitucionalissimamente"
+                    position={0}
+                />
             </div>
 
             <h2 className="fs-6">
