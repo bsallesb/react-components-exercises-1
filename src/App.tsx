@@ -15,6 +15,7 @@ import Q2Uppercase from './components/Q2Uppercase';
 import Q34UrlList from './components/Q34UrlList';
 import Q36Button from './components/Q36Button';
 import Q3Lowercase from './components/Q3Lowercase';
+import Q44ChangingTextColor from './components/Q44ChangingTextColor';
 import Q4StringLength from './components/Q4StringLength';
 import Q5FirstChar from './components/Q5FirstChar';
 import Q6LastChar from './components/Q6LastChar';
@@ -425,7 +426,9 @@ const App: React.FC = () => {
                 qualquer botão, deve-se alterar a cor do texto que está dentro
                 do span
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q44ChangingTextColor />
+            </div>
 
             <h2 className="fs-6">
                 45. Crie um componente que tem um <b>span</b> vazio, um input de
