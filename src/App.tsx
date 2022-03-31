@@ -344,7 +344,7 @@ const App: React.FC = () => {
             </h2>
             <div className="card p-3 mb-4">
                 <Q35ImageList
-                    list={[
+                    images={[
                         {
                             url: 'https://m.media-amazon.com/images/I/51TzWkoEUEL.jpg',
                         },

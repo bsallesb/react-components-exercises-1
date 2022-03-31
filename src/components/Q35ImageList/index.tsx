@@ -1,19 +1,18 @@
 import { ImageListType } from '../../@types/ImageList';
 
 interface IQ35ImageListProps {
-    list: ImageListType[];
+    images: ImageListType[];
     size: string;
 }
 
-const Q35ImageList: React.FC<IQ35ImageListProps> = ({ list, size }) => (
+const Q35ImageList: React.FC<IQ35ImageListProps> = ({ images, size }) => (
     <div>
-        {list.map(item => (
+        {images.map(image => (
             <div
                 style={{
                     width: size,
                     height: size,
-                    paddingTop: size,
-                    backgroundImage: `url(${item.url})`,
+                    backgroundImage: `url(${image.url})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center center',
                 }}
