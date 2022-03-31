@@ -16,6 +16,8 @@ const Q49Pokemon: React.FC = () => {
     }, []);
 
     const getPokemon = useCallback(() => {
+        setIsLoading(true);
+
         Api.get(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
             .then(response => setPokemon(response.data))
             .catch()
@@ -47,10 +49,7 @@ const Q49Pokemon: React.FC = () => {
                 <button
                     type="button"
                     className="btn btn-primary"
-                    onClick={() => {
-                        setIsLoading(true);
-                        getPokemon();
-                    }}
+                    onClick={() => getPokemon()}
                 >
                     Selecionar
                 </button>
