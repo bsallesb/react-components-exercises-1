@@ -15,7 +15,12 @@ import Q2Uppercase from './components/Q2Uppercase';
 import Q34UrlList from './components/Q34UrlList';
 import Q36Button from './components/Q36Button';
 import Q3Lowercase from './components/Q3Lowercase';
+import Q46AddressByZipCode from './components/Q46AddressByZipCode';
+import Q47USDtoBRL from './components/Q47USDtoBRL';
+import Q48Advice from './components/Q48Advice';
+import Q49Pokemon from './components/Q49Pokemon';
 import Q4StringLength from './components/Q4StringLength';
+import Q50Coffee from './components/Q50Coffee';
 import Q5FirstChar from './components/Q5FirstChar';
 import Q6LastChar from './components/Q6LastChar';
 import Q7Phrase from './components/Q7Phrase';
@@ -446,7 +451,9 @@ const App: React.FC = () => {
                 Obs: Deve ser exibido um ícone de loading enquanto a API estiver
                 buscando o CEP
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q46AddressByZipCode />
+            </div>
 
             <h2 className="fs-6">
                 47. Crie um componente que tem um input de número (dólares), um
@@ -457,7 +464,9 @@ const App: React.FC = () => {
                 input convertido para reais. Deve exibir um loading enquanto
                 busca
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q47USDtoBRL />
+            </div>
 
             <h2 className="fs-6">
                 48. Crie um componente que tem um span vazio e um botão, ao
@@ -465,7 +474,9 @@ const App: React.FC = () => {
                 Conselhos (https://api.adviceslip.com/advice) e retornar dentro
                 do <b>span</b> um conselho. Exibir um loading enquanto procura
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q48Advice />
+            </div>
 
             <h2 className="fs-6">
                 49. Crie um componente que tem um campo do tipo select com 5
@@ -475,7 +486,9 @@ const App: React.FC = () => {
                 nome do pokemon) e retornar a foto do pokemon escolhido no{' '}
                 <b>select</b>. Exibir um loading enquanto procura
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q49Pokemon />
+            </div>
 
             <h2 className="fs-6">
                 50. Crie um componente que tem um um botão, ao clicar no botão o
@@ -483,7 +496,9 @@ const App: React.FC = () => {
                 (https://coffee.alexflipnote.dev/random.json) e retornar a foto
                 do café
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q50Coffee />
+            </div>
         </div>
     );
 };
