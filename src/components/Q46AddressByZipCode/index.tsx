@@ -29,10 +29,10 @@ const Q46AddressByZipCode: React.FC = () => {
     const getAddress = useCallback(() => {
         const cleanZipCode = zipCode.replace('-', '');
 
-        if (cleanZipCode.length > 0) {
+        if (cleanZipCode.length === 8) {
+            setIsLoading(true);
             Api.get(`https://viacep.com.br/ws/${cleanZipCode}/json/`)
                 .then(response => setAddress(response.data ?? null))
-                .catch()
                 .finally(() => setIsLoading(false));
         }
     }, [zipCode]);
@@ -52,10 +52,7 @@ const Q46AddressByZipCode: React.FC = () => {
                 <button
                     type="button"
                     className="w-50 btn btn-primary"
-                    onClick={() => {
-                        setIsLoading(true);
-                        getAddress();
-                    }}
+                    onClick={() => getAddress()}
                 >
                     Buscar endereço
                 </button>
