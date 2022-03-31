@@ -6,6 +6,7 @@ const Q49Pokemon: React.FC = () => {
     const [pokemonName, setPokemonName] = useState('');
     const [pokemons, setPokemons] = useState<PokemonType[]>([]);
     const [pokemon, setPokemon] = useState<PokemonType | null>(null);
+    const [isLoading, setIsLoading] = useState(false);
 
     const getPokemons = useCallback(() => {
         Api.get(`https://pokeapi.co/api/v2/pokemon/`)
@@ -18,13 +19,13 @@ const Q49Pokemon: React.FC = () => {
         Api.get(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
             .then(response => setPokemon(response.data))
             .catch()
-            .finally();
+            .finally(() => setIsLoading(false));
     }, [pokemonName]);
 
     useEffect(() => {
         getPokemons();
-        getPokemon();
-    }, [getPokemon, getPokemons]);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
 
     return (
         <div>
@@ -46,22 +47,33 @@ const Q49Pokemon: React.FC = () => {
                 <button
                     type="button"
                     className="btn btn-primary"
-                    onClick={() => getPokemon()}
+                    onClick={() => {
+                        setIsLoading(true);
+                        getPokemon();
+                    }}
                 >
                     Selecionar
                 </button>
             </div>
-            {pokemon && (
+            {isLoading ? (
+                <div className="d-flex col-4 justify-content-center mt-5">
+                    <div className="spinner-grow me-2" role="status">
+                        <span className="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+            ) : (
                 <div className="d-flex col-4 justify-content-center">
-                    <div
-                        style={{
-                            height: 150,
-                            width: 150,
-                            backgroundImage: `url(${pokemon?.sprites.front_default})`,
-                            backgroundPosition: 'center center',
-                            backgroundSize: 'cover',
-                        }}
-                    />
+                    {pokemon && (
+                        <div
+                            style={{
+                                height: 150,
+                                width: 150,
+                                backgroundImage: `url(${pokemon?.sprites?.front_default})`,
+                                backgroundPosition: 'center center',
+                                backgroundSize: 'cover',
+                            }}
+                        />
+                    )}
                 </div>
             )}
         </div>
