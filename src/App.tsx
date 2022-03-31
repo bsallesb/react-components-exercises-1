@@ -19,6 +19,7 @@ import Q47USDtoBRL from './components/Q47USDtoBRL';
 import Q48Advice from './components/Q48Advice';
 import Q49Pokemon from './components/Q49Pokemon';
 import Q4StringLength from './components/Q4StringLength';
+import Q50Coffee from './components/Q50Coffee';
 import Q5FirstChar from './components/Q5FirstChar';
 import Q6LastChar from './components/Q6LastChar';
 import Q7Phrase from './components/Q7Phrase';
@@ -492,7 +493,9 @@ const App: React.FC = () => {
                 (https://coffee.alexflipnote.dev/random.json) e retornar a foto
                 do café
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q50Coffee />
+            </div>
         </div>
     );
 };
