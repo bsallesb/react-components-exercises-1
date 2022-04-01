@@ -1,6 +1,7 @@
 import './App.css';
 import Q10LargerString from './components/Q10LargerString';
 import Q11SearchInTheText from './components/Q11SearchInTheText';
+import Q12DiscoverLetter from './components/Q12DiscoverLetter';
 import Q13ReplaceTexts from './components/Q13ReplaceTexts';
 import Q14CapitalizeTheFirstLetter from './components/Q14CapitalizeTheFirstLetter';
 import Q16SumTwoNumbers from './components/Q16SumTwoNumbers';
@@ -152,7 +153,24 @@ const App: React.FC = () => {
                 <br /> Prop 2: 3
                 <br /> Retorno: c
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q12DiscoverLetter
+                    value="Inconstitucionalissimamente"
+                    position={-1}
+                />
+                <Q12DiscoverLetter
+                    value="Inconstitucionalissimamente"
+                    position={2}
+                />
+                <Q12DiscoverLetter
+                    value="Inconstitucionalissimamente"
+                    position={27}
+                />
+                <Q12DiscoverLetter
+                    value="Inconstitucionalissimamente"
+                    position={0}
+                />
+            </div>
 
             <h2 className="fs-6">
                 13. Crie um componente que recebe 3 strings. Retorna a primeira
