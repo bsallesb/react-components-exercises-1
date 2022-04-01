@@ -4,6 +4,7 @@ import Q11SearchInTheText from './components/Q11SearchInTheText';
 import Q12DiscoverLetter from './components/Q12DiscoverLetter';
 import Q13ReplaceTexts from './components/Q13ReplaceTexts';
 import Q14CapitalizeTheFirstLetter from './components/Q14CapitalizeTheFirstLetter';
+import Q15CapitalizeEveryFirstLetter from './components/Q15CapitalizeEveryFirstLetter';
 import Q16SumTwoNumbers from './components/Q16SumTwoNumbers';
 import Q17Subtraction from './components/Q17Subtraction';
 import Q18Multiplication from './components/Q18Multiplication';
@@ -212,7 +213,9 @@ const App: React.FC = () => {
                 <br /> Prop 1: MaS QuE LoUcUrA.
                 <br /> Retorno: Mas Que Loucura.
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q15CapitalizeEveryFirstLetter value="Oi tudo bem" />
+            </div>
 
             <h2 className="fs-6">
                 16. Crie um componente que recebe dois números e retorna o valor
