@@ -214,7 +214,7 @@ const App: React.FC = () => {
                 <br /> Retorno: Mas Que Loucura.
             </h2>
             <div className="card p-3 mb-4">
-                <Q15CapitalizeEveryFirstLetter value="Oi tudo bem" />
+                <Q15CapitalizeEveryFirstLetter value="MaS QuE LoUcUrA" />
             </div>
 
             <h2 className="fs-6">
