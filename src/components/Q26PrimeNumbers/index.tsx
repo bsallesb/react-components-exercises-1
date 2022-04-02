@@ -31,6 +31,6 @@ const Q26PrimeNumbers: React.FC<Q26PrimeNumbersProps> = ({ value }) => {
         return primes;
     }, [value, isPrime]);
 
-    return <span>{showPrime}</span>;
+    return <span>{showPrime.join(', ')}</span>;
 };
 export default Q26PrimeNumbers;
