@@ -4,6 +4,7 @@ import Q18Multiplication from './components/Q18Multiplication';
 import Q1String from './components/Q1String';
 import Q20ExponencialTwo from './components/Q20ExponencialTwo';
 import Q25CheckPrime from './components/Q25CheckPrime';
+import Q26PrimeNumbers from './components/Q26PrimeNumbers';
 import Q2Uppercase from './components/Q2Uppercase';
 import Q3Lowercase from './components/Q3Lowercase';
 import Q4StringLength from './components/Q4StringLength';
@@ -253,7 +254,9 @@ const App: React.FC = () => {
                 26. Crie um componente que recebe um número X e retorna os
                 primeiros X números primos
             </h2>
-            <div className="card p-3 mb-4">{/* Insira a resposta aqui */}</div>
+            <div className="card p-3 mb-4">
+                <Q26PrimeNumbers value={8} />
+            </div>
 
             <h2 className="fs-6">
                 27. Crie um componente que recebe um número X e retorna o seu
